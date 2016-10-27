@@ -198,9 +198,21 @@ module SwaggerClient
       'Basic ' + ["#{username}:#{password}"].pack('m').delete("\r\n")
     end
 
+    # Gets Bot to Connector Auth token string
+    def bot_to_connector_auth_token
+      'Bearer ' + @access_token
+    end
+
     # Returns Auth Settings hash for api client.
     def auth_settings
       {
+        'bot_to_connector' =>
+        {
+          type: 'bot_to_connector',
+          in: 'header',
+          key: 'Authorization',
+          value: bot_to_connector_auth_token
+        }
       }
     end
   end

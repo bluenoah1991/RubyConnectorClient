@@ -74,7 +74,7 @@ module SwaggerClient
 
       # http body (model)
       post_body = @api_client.object_to_http_body(parameters)
-      auth_names = []
+      auth_names = ['bot_to_connector']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -135,7 +135,7 @@ module SwaggerClient
 
       # http body (model)
       post_body = nil
-      auth_names = []
+      auth_names = ['bot_to_connector']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -192,7 +192,7 @@ module SwaggerClient
 
       # http body (model)
       post_body = nil
-      auth_names = []
+      auth_names = ['bot_to_connector']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -257,7 +257,7 @@ module SwaggerClient
 
       # http body (model)
       post_body = @api_client.object_to_http_body(activity)
-      auth_names = []
+      auth_names = ['bot_to_connector']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -317,7 +317,7 @@ module SwaggerClient
 
       # http body (model)
       post_body = @api_client.object_to_http_body(activity)
-      auth_names = []
+      auth_names = ['bot_to_connector']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -377,7 +377,7 @@ module SwaggerClient
 
       # http body (model)
       post_body = @api_client.object_to_http_body(attachment_upload)
-      auth_names = []
+      auth_names = ['bot_to_connector']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
